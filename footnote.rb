@@ -70,7 +70,7 @@ module Footnote
 		private
 		
 		def handle_fn_tag(text)
-			ref_text = RDiscount.new("#{text}<a href='#fnref:#{@current_reference}' rev='footnote'>↩</a>").to_html
+			ref_text = Maruku.new("#{text}<a href='#fnref:#{@current_reference}' rev='footnote'>↩</a>").to_html
 			@footnotes << "<li id='fn:#{@current_reference}'>#{ref_text}</li>"
 			@current_reference += 1
 		end
