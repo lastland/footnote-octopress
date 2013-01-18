@@ -11,7 +11,7 @@ How To Use?
 -----------
 
 ```
-This text needs to point to a footnote{% fn_ref 1 %} because it's good{% footnote_ref 2 %}.
+This text needs to point to a footnote{% fnref 1 %} because it's good{% footnoteref 2 %}.
 
 {% footnotes %}
   {% fn %} A footnote is this text at the end of you page that explains something.
@@ -32,7 +32,7 @@ Output:
 </div>
 ```
 
-Both <code>fn_ref</code> and <code>footnote_ref</code> means the same thing.
+Both <code>fnref</code> and <code>footnoteref</code> means the same thing.
 Use the one you prefer.
 
 How To Install in Octopress

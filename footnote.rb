@@ -77,6 +77,6 @@ module Footnote
 	end
 end
 
-Liquid::Template.register_tag('footnote_ref', Footnote::ReferenceTag)
-Liquid::Template.register_tag('fn_ref', Footnote::ReferenceTag)
+Liquid::Template.register_tag('footnoteref', Footnote::ReferenceTag)
+Liquid::Template.register_tag('fnref', Footnote::ReferenceTag)
 Liquid::Template.register_tag('footnotes', Footnote::FootnotesBlock)
